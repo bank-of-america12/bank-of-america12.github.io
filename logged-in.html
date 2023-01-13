@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="style.css">
-<div id="dashboard">
+<html><head><link rel="stylesheet" href="style.css">
+<style type="text/css"></style></head><body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed=""><div id="dashboard">
   <div id="account-summary">
     <h2>Account Summary</h2>
     <div id="checking-account">
@@ -18,7 +18,7 @@
   <div id="transactions">
     <h2>Recent Transactions</h2>
     <table>
-      <tr>
+      <tbody><tr>
         <th>Date</th>
         <th>Description</th>
         <th>Amount</th>
@@ -33,7 +33,7 @@
         <td>Rent</td>
         <td>$1,000.00</td>
       </tr>
-    </table>
+    </tbody></table>
   </div>
   <div id="transfer-funds">
     <h2>Transfer Funds</h2>
@@ -52,7 +52,50 @@
       <br>
       <button type="submit">Submit</button>
     </form>
-  </div>
+  </div><style>#transfer-funds {
+    padding: 2em;
+    border-radius: 0.5em;
+    background-color: #848692;
+    box-shadow: 0 0 10px #6e5ebb;
+    text-align: center;
+}
+
+#transfer-funds h2 {
+    margin-bottom: 1.5em;
+}
+
+#transfer-funds form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#transfer-funds label {
+    width: 100%;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#transfer-funds select, #transfer-funds input {
+    padding: 0.5em;
+    margin-right: 1em;
+    border-radius: 0.25em;
+    border: none;
+    font-size: 1.2em;
+}
+
+#transfer-funds button {
+    background-color: #6e5ebb;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    border: none;
+    cursor: pointer;
+}
+</style>
 </div>
 <script>const transferForm = document.
 </script>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
