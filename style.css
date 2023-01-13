@@ -1,3 +1,19 @@
+button {
+  background-color: #6e5ebb; /* this is the "blurple" color */
+  color: white; /* text color */
+  padding: 0.5em 1em; /* button padding */
+  border-radius: 0.25em; /* rounded corners */
+  border: none; /* remove default border */
+  cursor: pointer; /* change cursor on hover */
+}
+.primary-button {
+  background-color: #6e5ebb;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
