@@ -1,0 +1,81 @@
+<html><head>
+  <title>Banking Website</title>
+</head>
+<body><style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to Our Banking Website</h1>
+    <p>Here you can manage your accounts, view your transactions, and contact us for any assistance.</p>
+    <form>
+  <label for="Username">Username:</label>
+  <input type="text" id="user" name="Username">
+    <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <button type="button" onclick="checkPassword()">Submit</button>
+</form>
+<script>function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password == "1234") {
+    window.location.href = "/logged-in";
+  } else {
+    window.location.href = "/denied";
+  }
+}
+</script>
+  </main>
+  <footer>
+    <p>Copyright © 2023 Banking Website</p>
+  </footer>
+
+
+</body></html>
