@@ -1,5 +1,5 @@
 <html><head><link rel="stylesheet" href="style.css">
-<style type="text/css"></style></head><body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed=""><div id="dashboard">
+<style type="text/css"></style><style type="text/css"></style></head><body data-new-gr-c-s-check-loaded="14.1093.0" data-gr-ext-installed=""><div id="dashboard">
   <div id="account-summary">
     <h2>Account Summary</h2>
     <div id="checking-account">
@@ -16,7 +16,70 @@
     </div>
   </div>
   <div id="transactions">
-    <h2>Recent Transactions</h2>
+    <script>const table = document.getElementsByTagName("table")[0];
+
+const randomizeTable = () => {
+  const dates = ["01/01/2022", "01/03/2022", "02/01/2022", "03/01/2022"];
+  const descriptions = ["Paycheck", "Rent", "Utilities", "Groceries"];
+  const amounts = ["$3,000.00", "$1,000.00", "$500.00", "$200.00"];
+
+  // Check if user is logged in
+  if (loggedIn()) {
+    // Check if "Payload" has a log of refreshing the table once for the IP and username
+    if (checkRefreshLog()) {
+      // DO NOT refresh table for another 10 hours
+      console.log("Table refresh blocked for 10 hours");
+      return;
+    } else {
+      // Add a log to "Payload" for the IP and username for refreshing the table once
+      addRefreshLog();
+    }
+  }
+
+  // Clear current content of table
+  table.innerHTML = "";
+
+  // Add table headers
+  const headerRow = document.createElement("tr");
+  const headers = ["Date", "Description", "Amount"];
+  headers.forEach(header => {
+    const th = document.createElement("th");
+    th.innerHTML = header;
+    headerRow.appendChild(th);
+  });
+  table.appendChild(headerRow);
+
+  // Add random data to table
+  for (let i = 0; i < 10; i++) {
+    const row = document.createElement("tr");
+    const date = document.createElement("td");
+    date.innerHTML = dates[Math.floor(Math.random() * dates.length)];
+    row.appendChild(date);
+
+    const description = document.createElement("td");
+    description.innerHTML = descriptions[Math.floor(Math.random() * descriptions.length)];
+    row.appendChild(description);
+
+    const amount = document.createElement("td");
+    amount.innerHTML = amounts[Math.floor(Math.random() * amounts.length)];
+    row.appendChild(amount);
+
+    table.appendChild(row);
+  }
+};
+
+const loggedIn = () => {
+  // Add code to check if user is logged in
+};
+
+const checkRefreshLog = () => {
+  // Add code to check if "Payload" has a log of refreshing the table once for the IP and username
+};
+
+const addRefreshLog = () => {
+  // Add code to add a log to "Payload" for the IP and username for refreshing the table once
+};
+</script><h2>Recent Transactions</h2>
     <table>
       <tbody><tr>
         <th>Date</th>
@@ -98,4 +161,5 @@
 </div>
 <script>const transferForm = document.
 </script>
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</body></html>
