@@ -1,4 +1,4 @@
-button {
+#button {
   background-color: #6e5ebb; /* this is the "blurple" color */
   color: white; /* text color */
   padding: 0.5em 1em; /* button padding */
@@ -6,7 +6,7 @@ button {
   border: none; /* remove default border */
   cursor: pointer; /* change cursor on hover */
 }
-.primary-button {
+#primary-button {
   background-color: #6e5ebb;
   color: white;
   padding: 0.5em 1em;
