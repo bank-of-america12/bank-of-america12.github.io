@@ -1,0 +1,23 @@
+<div id="error-message" hidden>
+  <p>Incorrect Credentials. Either the credentials that you have entered is incorrect or your are banned</p>
+</div>
+<script>const errorMessage = document.getElementById("error-message");
+
+function showErrorMessage() {
+  errorMessage.removeAttribute("hidden");
+}
+</script>
+<style>#error-message {
+  padding: 1em;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  border-radius: 0.5em;
+  box-shadow: 0 0 10px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+</style>
